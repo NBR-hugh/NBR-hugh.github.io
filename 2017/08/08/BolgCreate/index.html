@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="NBR&#39;s Blog">
 <meta property="og:description" content="启程">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-08T11:28:06.000Z">
+<meta property="og:updated_time" content="2017-08-10T01:54:37.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HEXO 博客创建记">
 <meta name="twitter:description" content="启程">
@@ -557,6 +557,47 @@
 </ul>
 </li>
 </ul>
+<h3 id="q1-error-with-dtrace-mac-os-x">Q1:Error with DTrace (Mac OS X)</h3>
+<ul>
+<li>
+<p>错误信息:</p>
+<ul>
+<li><code>Error: Cannot find module './build/Debug/DTraceProviderBindings'</code></li>
+<li>该错误不影响博客的正常使用,但是每运行一次 hexo 命令就会跑出来,十分难受.</li>
+</ul>
+</li>
+<li>
+<p>搜索0:直接google错误信息</p>
+<ul>
+<li>方案0:官方文档
+<ul>
+<li><a href="https://hexo.io/docs/troubleshooting.html#Error-with-DTrace-Mac-OS-X" target="_blank" rel="external">Troubleshooting | Hexo</a></li>
+<li>DTrace安装存在问题,因此重新安装简约版</li>
+<li><code>$ npm install hexo --no-optional</code></li>
+<li>直接安装或则卸载原来的 hexo <code>npm uninstall -g hexo-cli</code>再安装,均无效</li>
+</ul>
+</li>
+<li>方案1:github issue
+<ul>
+<li>
+<p><a href="https://github.com/trentm/node-bunyan/issues/216#issuecomment-267756175" target="_blank" rel="external">Still getting lots of DtraceProviderBindings errors on OS X · Issue #216 · trentm/node-bunyan</a></p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm install -g build essential</div><div class="line">npm rebuild</div></pre></td></tr></table></figure>
+</li>
+<li>
+<p>无效</p>
+</li>
+</ul>
+</li>
+<li>方案3:安装 dtrace-provider 模块
+<ul>
+<li><a href="https://github.com/trentm/node-bunyan/issues/216#issuecomment-297492319" target="_blank" rel="external">Still getting lots of DtraceProviderBindings errors on OS X · Issue #216 · trentm/node-bunyan</a></li>
+<li>npm install dtrace-provider</li>
+<li>无效</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <h2 id="日常操作">日常操作</h2>
 <ol>
 <li>
@@ -902,7 +943,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#触发"><span class="nav-number">1.</span> <span class="nav-text">触发</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基本信息"><span class="nav-number">2.</span> <span class="nav-text">基本信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建步骤"><span class="nav-number">3.</span> <span class="nav-text">创建步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-git-与-hexo-本地环境的基本配置"><span class="nav-number">3.1.</span> <span class="nav-text">1.Git 与 HEXO 本地环境的基本配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-测试本地环境与初步部署"><span class="nav-number">3.2.</span> <span class="nav-text">2.测试本地环境与初步部署</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-主题更改与配置"><span class="nav-number">3.3.</span> <span class="nav-text">3.主题更改与配置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#问题解决"><span class="nav-number">4.</span> <span class="nav-text">问题解决</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#q0-npm-install-g-hexo-cli安装失败"><span class="nav-number">4.1.</span> <span class="nav-text">Q0:npm install -g hexo-cli安装失败</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#日常操作"><span class="nav-number">5.</span> <span class="nav-text">日常操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#timelog"><span class="nav-number">6.</span> <span class="nav-text">TimeLog</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#触发"><span class="nav-number">1.</span> <span class="nav-text">触发</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基本信息"><span class="nav-number">2.</span> <span class="nav-text">基本信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建步骤"><span class="nav-number">3.</span> <span class="nav-text">创建步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-git-与-hexo-本地环境的基本配置"><span class="nav-number">3.1.</span> <span class="nav-text">1.Git 与 HEXO 本地环境的基本配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-测试本地环境与初步部署"><span class="nav-number">3.2.</span> <span class="nav-text">2.测试本地环境与初步部署</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-主题更改与配置"><span class="nav-number">3.3.</span> <span class="nav-text">3.主题更改与配置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#问题解决"><span class="nav-number">4.</span> <span class="nav-text">问题解决</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#q0-npm-install-g-hexo-cli安装失败"><span class="nav-number">4.1.</span> <span class="nav-text">Q0:npm install -g hexo-cli安装失败</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#q1-error-with-dtrace-mac-os-x"><span class="nav-number">4.2.</span> <span class="nav-text">Q1:Error with DTrace (Mac OS X)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#日常操作"><span class="nav-number">5.</span> <span class="nav-text">日常操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#timelog"><span class="nav-number">6.</span> <span class="nav-text">TimeLog</span></a></li></ol></div>
             
 
           </div>
