@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-11-20T08:50:27.410Z</updated>
+  <updated>2018-01-25T12:15:12.717Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,19 +16,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Anaconda&amp; JupyterNotebook 探索</title>
-    <link href="http://yoursite.com/2017/08/14/2017-08-14-anaconda/"/>
-    <id>http://yoursite.com/2017/08/14/2017-08-14-anaconda/</id>
-    <published>2017-08-14T15:44:17.000Z</published>
-    <updated>2017-11-20T08:50:27.410Z</updated>
+    <title>悔</title>
+    <link href="http://yoursite.com/2018/01/25/2018-01-25-regret/"/>
+    <id>http://yoursite.com/2018/01/25/2018-01-25-regret/</id>
+    <published>2018-01-25T11:25:01.000Z</published>
+    <updated>2018-01-25T12:15:12.717Z</updated>
     
     <summary type="html">
     
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt; 好工具是命&lt;/blockquote&gt;
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt; 争此念,争此日,争此生!&lt;/blockquote&gt;
     
     </summary>
     
-      <category term="Tech" scheme="http://yoursite.com/categories/Tech/"/>
+      <category term="Write" scheme="http://yoursite.com/categories/Write/"/>
+    
+    
+      <category term="poem" scheme="http://yoursite.com/tags/poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Anaconda &amp; JupyterNotebook 探索</title>
+    <link href="http://yoursite.com/2017/08/14/2017-08-14-anaconda/"/>
+    <id>http://yoursite.com/2017/08/14/2017-08-14-anaconda/</id>
+    <published>2017-08-14T15:44:17.000Z</published>
+    <updated>2018-01-25T12:16:49.570Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt; 编程环境与笔记工具初探 &lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Tool" scheme="http://yoursite.com/categories/Tool/"/>
     
     
       <category term="notebook" scheme="http://yoursite.com/tags/notebook/"/>
@@ -36,11 +56,11 @@
   </entry>
   
   <entry>
-    <title>HEXO 博客创建记</title>
+    <title>博客初创</title>
     <link href="http://yoursite.com/2017/08/08/2017-08-08-BlogCreate/"/>
     <id>http://yoursite.com/2017/08/08/2017-08-08-BlogCreate/</id>
     <published>2017-08-08T11:02:07.000Z</published>
-    <updated>2017-08-10T03:26:49.000Z</updated>
+    <updated>2018-01-25T12:13:34.787Z</updated>
     
     <summary type="html">
     
@@ -48,7 +68,7 @@
     
     </summary>
     
-      <category term="Tech" scheme="http://yoursite.com/categories/Tech/"/>
+      <category term="Tool" scheme="http://yoursite.com/categories/Tool/"/>
     
     
       <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
