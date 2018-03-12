@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-01-27T15:25:01.815Z</updated>
+  <updated>2018-03-12T17:13:29.529Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>母亲的童年</title>
+    <link href="http://yoursite.com/2018/03/13/2018-03-13-MomChildhood/"/>
+    <id>http://yoursite.com/2018/03/13/2018-03-13-MomChildhood/</id>
+    <published>2018-03-12T16:53:20.000Z</published>
+    <updated>2018-03-12T17:13:29.529Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt; 夜聊小纪,记忆剪影&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Write" scheme="http://yoursite.com/categories/Write/"/>
+    
+    
+      <category term="Memory" scheme="http://yoursite.com/tags/Memory/"/>
+    
+  </entry>
   
   <entry>
     <title>编程小感</title>
