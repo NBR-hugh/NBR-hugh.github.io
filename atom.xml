@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-03-16T06:02:19.632Z</updated>
+  <updated>2018-03-17T19:56:27.174Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python 开发环境 (conda=&gt;Pipenv)</title>
+    <link href="http://yoursite.com/2018/03/18/2018-03-17-Pipenv/"/>
+    <id>http://yoursite.com/2018/03/18/2018-03-17-Pipenv/</id>
+    <published>2018-03-17T19:42:17.000Z</published>
+    <updated>2018-03-17T19:56:27.174Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt; 如何设置干净的 python 开发环境? &lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Tech" scheme="http://yoursite.com/categories/Tech/"/>
+    
+    
+      <category term="pipenv" scheme="http://yoursite.com/tags/pipenv/"/>
+    
+  </entry>
   
   <entry>
     <title>母忆 · 童年</title>
