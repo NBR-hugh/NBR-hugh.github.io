@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-03-26T15:37:59.429Z</updated>
+  <updated>2018-04-02T08:19:32.787Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>怼</title>
+    <link href="http://yoursite.com/2018/04/02/2018-04-02-DebugUself/"/>
+    <id>http://yoursite.com/2018/04/02/2018-04-02-DebugUself/</id>
+    <published>2018-04-02T07:53:01.000Z</published>
+    <updated>2018-04-02T08:19:32.787Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;  明心致事,唯有自怼 &lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Write" scheme="http://yoursite.com/categories/Write/"/>
+    
+    
+      <category term="poem" scheme="http://yoursite.com/tags/poem/"/>
+    
+  </entry>
   
   <entry>
     <title>定</title>
