@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-04-07T10:24:42.031Z</updated>
+  <updated>2018-04-07T10:40:10.597Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2018/04/07/2018-04-07-BeatBad/"/>
     <id>http://yoursite.com/2018/04/07/2018-04-07-BeatBad/</id>
     <published>2018-04-07T09:22:21.000Z</published>
-    <updated>2018-04-07T10:24:42.031Z</updated>
+    <updated>2018-04-07T10:40:10.597Z</updated>
     
     <summary type="html">
     
@@ -31,7 +31,7 @@
       <category term="Write" scheme="http://yoursite.com/categories/Write/"/>
     
     
-      <category term="poem" scheme="http://yoursite.com/tags/poem/"/>
+      <category term="lesson" scheme="http://yoursite.com/tags/lesson/"/>
     
   </entry>
   
@@ -60,7 +60,7 @@
     <link href="http://yoursite.com/2018/04/02/2018-04-02-DebugUself/"/>
     <id>http://yoursite.com/2018/04/02/2018-04-02-DebugUself/</id>
     <published>2018-04-02T07:53:01.000Z</published>
-    <updated>2018-04-02T08:19:32.787Z</updated>
+    <updated>2018-04-07T10:40:15.164Z</updated>
     
     <summary type="html">
     
