@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>NBR&#39;s Blog</title>
+  
   <subtitle>Writing &amp; Recording</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-04-07T10:40:10.597Z</updated>
+  <updated>2018-06-04T08:59:27.598Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>习得性无助</title>
+    <link href="http://yoursite.com/2018/06/04/2018-06-04-LearnedHelplessness/"/>
+    <id>http://yoursite.com/2018/06/04/2018-06-04-LearnedHelplessness/</id>
+    <published>2018-06-04T08:55:00.000Z</published>
+    <updated>2018-06-04T08:59:27.598Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt; 师友昆仑肝胆助,奈何自绝求生路. &lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Write" scheme="http://yoursite.com/categories/Write/"/>
+    
+    
+      <category term="poem" scheme="http://yoursite.com/tags/poem/"/>
+    
+  </entry>
+  
+  <entry>
     <title>陶崇园之悲</title>
     <link href="http://yoursite.com/2018/04/07/2018-04-07-BeatBad/"/>
     <id>http://yoursite.com/2018/04/07/2018-04-07-BeatBad/</id>
     <published>2018-04-07T09:22:21.000Z</published>
-    <updated>2018-04-07T10:40:10.597Z</updated>
+    <updated>2018-04-07T10:40:10.596Z</updated>
     
     <summary type="html">
     
@@ -40,7 +61,7 @@
     <link href="http://yoursite.com/2018/04/04/2018-04-04-WHUT/"/>
     <id>http://yoursite.com/2018/04/04/2018-04-04-WHUT/</id>
     <published>2018-04-04T06:18:28.000Z</published>
-    <updated>2018-04-04T06:36:17.574Z</updated>
+    <updated>2018-04-04T06:36:17.573Z</updated>
     
     <summary type="html">
     
@@ -60,7 +81,7 @@
     <link href="http://yoursite.com/2018/04/02/2018-04-02-DebugUself/"/>
     <id>http://yoursite.com/2018/04/02/2018-04-02-DebugUself/</id>
     <published>2018-04-02T07:53:01.000Z</published>
-    <updated>2018-04-07T10:40:15.164Z</updated>
+    <updated>2018-04-07T10:40:15.163Z</updated>
     
     <summary type="html">
     
@@ -97,8 +118,8 @@
   
   <entry>
     <title>惜</title>
-    <link href="http://yoursite.com/2018/03/25/2019-03-23-Cherish/"/>
-    <id>http://yoursite.com/2018/03/25/2019-03-23-Cherish/</id>
+    <link href="http://yoursite.com/2018/03/25/2018-03-23-Cherish/"/>
+    <id>http://yoursite.com/2018/03/25/2018-03-23-Cherish/</id>
     <published>2018-03-24T16:28:33.000Z</published>
     <updated>2018-03-26T15:43:47.476Z</updated>
     
@@ -140,7 +161,7 @@
     <link href="http://yoursite.com/2018/03/13/2018-03-13-MomChildhood/"/>
     <id>http://yoursite.com/2018/03/13/2018-03-13-MomChildhood/</id>
     <published>2018-03-12T16:53:20.000Z</published>
-    <updated>2018-03-24T17:14:36.864Z</updated>
+    <updated>2018-03-24T17:14:36.863Z</updated>
     
     <summary type="html">
     
@@ -160,7 +181,7 @@
     <link href="http://yoursite.com/2018/01/27/2018-01-27-codeSence/"/>
     <id>http://yoursite.com/2018/01/27/2018-01-27-codeSence/</id>
     <published>2018-01-27T15:16:11.000Z</published>
-    <updated>2018-03-24T16:49:45.001Z</updated>
+    <updated>2018-03-24T16:49:45.000Z</updated>
     
     <summary type="html">
     
@@ -180,7 +201,7 @@
     <link href="http://yoursite.com/2018/01/25/2018-01-25-regret/"/>
     <id>http://yoursite.com/2018/01/25/2018-01-25-regret/</id>
     <published>2018-01-25T11:25:01.000Z</published>
-    <updated>2018-01-25T12:15:12.717Z</updated>
+    <updated>2018-01-25T12:15:12.716Z</updated>
     
     <summary type="html">
     
@@ -200,7 +221,7 @@
     <link href="http://yoursite.com/2017/08/14/2017-08-14-anaconda/"/>
     <id>http://yoursite.com/2017/08/14/2017-08-14-anaconda/</id>
     <published>2017-08-14T15:44:17.000Z</published>
-    <updated>2018-01-25T12:16:49.570Z</updated>
+    <updated>2018-01-25T12:16:49.569Z</updated>
     
     <summary type="html">
     
