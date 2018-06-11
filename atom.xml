@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-06-04T08:59:27.598Z</updated>
+  <updated>2018-06-11T00:14:54.941Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>社会形象</title>
+    <link href="http://yoursite.com/2018/06/11/2018-06-04-SocialImage/"/>
+    <id>http://yoursite.com/2018/06/11/2018-06-04-SocialImage/</id>
+    <published>2018-06-11T00:04:56.000Z</published>
+    <updated>2018-06-11T00:14:54.941Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;  恬然平常阶边石,自患女娲补天余.   &lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Write" scheme="http://yoursite.com/categories/Write/"/>
+    
+    
+      <category term="poem" scheme="http://yoursite.com/tags/poem/"/>
+    
+  </entry>
+  
+  <entry>
     <title>习得性无助</title>
     <link href="http://yoursite.com/2018/06/04/2018-06-04-LearnedHelplessness/"/>
     <id>http://yoursite.com/2018/06/04/2018-06-04-LearnedHelplessness/</id>
     <published>2018-06-04T08:55:00.000Z</published>
-    <updated>2018-06-04T08:59:27.598Z</updated>
+    <updated>2018-06-11T00:28:12.403Z</updated>
     
     <summary type="html">
     
@@ -61,7 +81,7 @@
     <link href="http://yoursite.com/2018/04/04/2018-04-04-WHUT/"/>
     <id>http://yoursite.com/2018/04/04/2018-04-04-WHUT/</id>
     <published>2018-04-04T06:18:28.000Z</published>
-    <updated>2018-04-04T06:36:17.573Z</updated>
+    <updated>2018-06-11T00:32:05.212Z</updated>
     
     <summary type="html">
     
@@ -81,7 +101,7 @@
     <link href="http://yoursite.com/2018/04/02/2018-04-02-DebugUself/"/>
     <id>http://yoursite.com/2018/04/02/2018-04-02-DebugUself/</id>
     <published>2018-04-02T07:53:01.000Z</published>
-    <updated>2018-04-07T10:40:15.163Z</updated>
+    <updated>2018-06-11T00:31:57.435Z</updated>
     
     <summary type="html">
     
@@ -101,7 +121,7 @@
     <link href="http://yoursite.com/2018/03/26/2018-03-26-Fix/"/>
     <id>http://yoursite.com/2018/03/26/2018-03-26-Fix/</id>
     <published>2018-03-26T13:48:04.000Z</published>
-    <updated>2018-03-26T15:37:59.429Z</updated>
+    <updated>2018-06-11T00:32:19.362Z</updated>
     
     <summary type="html">
     
@@ -121,7 +141,7 @@
     <link href="http://yoursite.com/2018/03/25/2018-03-23-Cherish/"/>
     <id>http://yoursite.com/2018/03/25/2018-03-23-Cherish/</id>
     <published>2018-03-24T16:28:33.000Z</published>
-    <updated>2018-03-26T15:43:47.476Z</updated>
+    <updated>2018-06-11T00:32:10.849Z</updated>
     
     <summary type="html">
     
@@ -181,7 +201,7 @@
     <link href="http://yoursite.com/2018/01/27/2018-01-27-codeSence/"/>
     <id>http://yoursite.com/2018/01/27/2018-01-27-codeSence/</id>
     <published>2018-01-27T15:16:11.000Z</published>
-    <updated>2018-03-24T16:49:45.000Z</updated>
+    <updated>2018-06-11T00:32:29.317Z</updated>
     
     <summary type="html">
     
