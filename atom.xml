@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-06-18T09:04:18.872Z</updated>
+  <updated>2018-06-18T09:16:07.997Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,15 +17,36 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>信息过载</title>
-    <link href="http://yoursite.com/2018/06/18/2018-06-18-Title/"/>
-    <id>http://yoursite.com/2018/06/18/2018-06-18-Title/</id>
-    <published>2018-06-18T09:00:24.000Z</published>
-    <updated>2018-06-18T09:04:18.872Z</updated>
+    <title>转行</title>
+    <link href="http://yoursite.com/2018/06/18/2018-06-18-RedirectCareer/"/>
+    <id>http://yoursite.com/2018/06/18/2018-06-18-RedirectCareer/</id>
+    <published>2018-06-18T09:11:37.000Z</published>
+    <updated>2018-06-18T09:16:07.997Z</updated>
     
     <summary type="html">
     
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt; 枉遍他者万般解,无益吾心一点明. &lt;/blockquote&gt;
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt; 弃困独桥觅旷野,始问机缘随贵人. &lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Write" scheme="http://yoursite.com/categories/Write/"/>
+    
+    
+      <category term="poem" scheme="http://yoursite.com/tags/poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>授权</title>
+    <link href="http://yoursite.com/2018/06/18/2018-06-18-Impower/"/>
+    <id>http://yoursite.com/2018/06/18/2018-06-18-Impower/</id>
+    <published>2018-06-18T09:08:32.000Z</published>
+    <updated>2018-06-18T09:10:59.855Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt; 等人滞事皆困腐,何妨长啸先徐行 .
+ &lt;/blockquote&gt;
     
     </summary>
     
@@ -41,7 +62,7 @@
     <link href="http://yoursite.com/2018/06/18/2018-06-18-OverInfo/"/>
     <id>http://yoursite.com/2018/06/18/2018-06-18-OverInfo/</id>
     <published>2018-06-18T09:00:24.000Z</published>
-    <updated>2018-06-18T09:04:47.717Z</updated>
+    <updated>2018-06-18T09:08:17.633Z</updated>
     
     <summary type="html">
     
@@ -62,26 +83,6 @@
     <id>http://yoursite.com/2018/06/11/2018-06-11-Stuck/</id>
     <published>2018-06-11T07:22:22.000Z</published>
     <updated>2018-06-11T07:27:14.311Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt; 始问不清答亦渺, 自寻彷徨疑无路. &lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="Write" scheme="http://yoursite.com/categories/Write/"/>
-    
-    
-      <category term="poem" scheme="http://yoursite.com/tags/poem/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>卡顿</title>
-    <link href="http://yoursite.com/2018/06/11/2018-06-04-Title/"/>
-    <id>http://yoursite.com/2018/06/11/2018-06-04-Title/</id>
-    <published>2018-06-11T07:22:22.000Z</published>
-    <updated>2018-06-11T07:25:32.340Z</updated>
     
     <summary type="html">
     
