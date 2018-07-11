@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-11T08:49:17.480Z</updated>
+  <updated>2018-07-11T09:19:20.896Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>台风</title>
+    <link href="http://yoursite.com/2018/07/11/2018-07-11-Typhoon/"/>
+    <id>http://yoursite.com/2018/07/11/2018-07-11-Typhoon/</id>
+    <published>2018-07-11T08:43:08.000Z</published>
+    <updated>2018-07-11T09:19:20.896Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt; 狂风舞鱼龙, 倾雨歌天籁.  &lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Write" scheme="http://yoursite.com/categories/Write/"/>
+    
+    
+      <category term="poem" scheme="http://yoursite.com/tags/poem/"/>
+    
+  </entry>
   
   <entry>
     <title>台风</title>
@@ -395,26 +415,6 @@
     
     
       <category term="poem" scheme="http://yoursite.com/tags/poem/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Anaconda &amp; JupyterNotebook 探索</title>
-    <link href="http://yoursite.com/2017/08/14/2017-08-14-anaconda/"/>
-    <id>http://yoursite.com/2017/08/14/2017-08-14-anaconda/</id>
-    <published>2017-08-14T15:44:17.000Z</published>
-    <updated>2018-01-25T12:16:49.569Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt; 编程环境与笔记工具初探 &lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="Tool" scheme="http://yoursite.com/categories/Tool/"/>
-    
-    
-      <category term="notebook" scheme="http://yoursite.com/tags/notebook/"/>
     
   </entry>
   
