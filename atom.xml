@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-18T18:34:53.250Z</updated>
+  <updated>2018-07-18T18:36:15.500Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2018/07/16/2018-07-16-Talk/"/>
     <id>http://yoursite.com/2018/07/16/2018-07-16-Talk/</id>
     <published>2018-07-16T09:33:08.000Z</published>
-    <updated>2018-07-18T18:34:53.250Z</updated>
+    <updated>2018-07-18T18:36:15.500Z</updated>
     
     <summary type="html">
     
@@ -32,7 +32,7 @@
       <category term="Write" scheme="http://yoursite.com/categories/Write/"/>
     
     
-      <category term="开智正典" scheme="http://yoursite.com/tags/%E5%BC%80%E6%99%BA%E6%AD%A3%E5%85%B8/"/>
+      <category term="OpenMind" scheme="http://yoursite.com/tags/OpenMind/"/>
     
   </entry>
   
@@ -81,7 +81,7 @@
     <link href="http://yoursite.com/2018/07/04/2018-07-04-Change/"/>
     <id>http://yoursite.com/2018/07/04/2018-07-04-Change/</id>
     <published>2018-07-04T12:53:28.000Z</published>
-    <updated>2018-07-11T15:35:19.385Z</updated>
+    <updated>2018-07-18T18:36:39.764Z</updated>
     
     <summary type="html">
     
@@ -93,7 +93,7 @@
       <category term="Write" scheme="http://yoursite.com/categories/Write/"/>
     
     
-      <category term="开智正典" scheme="http://yoursite.com/tags/%E5%BC%80%E6%99%BA%E6%AD%A3%E5%85%B8/"/>
+      <category term="OpenMind" scheme="http://yoursite.com/tags/OpenMind/"/>
     
   </entry>
   
