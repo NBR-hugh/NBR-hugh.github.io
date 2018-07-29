@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2018/03/18/2018-03-17-Pipenv/</loc>
+    
+    <lastmod>2018-07-29T13:57:47.632Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2018/07/29/2018-07-29-PythonRegex/</loc>
     
     <lastmod>2018-07-29T13:55:11.619Z</lastmod>
@@ -152,13 +159,6 @@
     <loc>http://yoursite.com/2018/03/13/2018-03-13-MomChildhood/</loc>
     
     <lastmod>2018-03-24T17:14:36.863Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/03/18/2018-03-17-Pipenv/</loc>
-    
-    <lastmod>2018-03-17T19:56:27.174Z</lastmod>
     
   </url>
   
