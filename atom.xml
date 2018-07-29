@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-29T13:00:53.976Z</updated>
+  <updated>2018-07-29T13:55:11.619Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Regex Python re module</title>
+    <link href="http://yoursite.com/2018/07/29/2018-07-29-PythonRegex/"/>
+    <id>http://yoursite.com/2018/07/29/2018-07-29-PythonRegex/</id>
+    <published>2018-07-29T13:21:32.000Z</published>
+    <updated>2018-07-29T13:55:11.619Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt; python regex matachar  &lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Tech" scheme="http://yoursite.com/categories/Tech/"/>
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+      <category term="regex" scheme="http://yoursite.com/tags/regex/"/>
+    
+  </entry>
   
   <entry>
     <title>幻想</title>
@@ -395,26 +417,6 @@
     
     
       <category term="poem" scheme="http://yoursite.com/tags/poem/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python 开发环境 (conda=&gt;Pipenv)</title>
-    <link href="http://yoursite.com/2018/03/18/2018-03-17-Pipenv/"/>
-    <id>http://yoursite.com/2018/03/18/2018-03-17-Pipenv/</id>
-    <published>2018-03-17T19:42:17.000Z</published>
-    <updated>2018-03-17T19:56:27.174Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt; 如何设置干净的 python 开发环境? &lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="Tech" scheme="http://yoursite.com/categories/Tech/"/>
-    
-    
-      <category term="pipenv" scheme="http://yoursite.com/tags/pipenv/"/>
     
   </entry>
   
