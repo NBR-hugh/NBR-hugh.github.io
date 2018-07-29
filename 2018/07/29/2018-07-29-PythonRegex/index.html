@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="poem," />
+  <meta name="keywords" content="python, regex," />
 
 
 
@@ -96,18 +96,18 @@
 
 
 
-<meta name="description" content="争此念,争此日,争此生!">
-<meta name="keywords" content="poem">
+<meta name="description" content="python regex matachar">
+<meta name="keywords" content="python, regex">
 <meta property="og:type" content="article">
-<meta property="og:title" content="悔">
-<meta property="og:url" content="http://yoursite.com/2018/01/25/2018-01-25-regret/index.html">
+<meta property="og:title" content="Regex Python re module">
+<meta property="og:url" content="http://yoursite.com/2018/07/29/2018-07-29-PythonRegex/index.html">
 <meta property="og:site_name" content="NBR&#39;s Blog">
-<meta property="og:description" content="争此念,争此日,争此生!">
+<meta property="og:description" content="python regex matachar">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-25T12:15:12.716Z">
+<meta property="og:updated_time" content="2018-07-29T13:49:06.040Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="悔">
-<meta name="twitter:description" content="争此念,争此日,争此生!">
+<meta name="twitter:title" content="Regex Python re module">
+<meta name="twitter:description" content="python regex matachar">
 
 
 
@@ -136,13 +136,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/01/25/2018-01-25-regret/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/07/29/2018-07-29-PythonRegex/"/>
 
 
 
 
 
-  <title>悔 | NBR's Blog</title>
+  <title>Regex Python re module | NBR's Blog</title>
   
 
 
@@ -323,7 +323,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/25/2018-01-25-regret/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/29/2018-07-29-PythonRegex/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="NBR-hugh">
@@ -340,7 +340,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">悔</h1>
+          <h1 class="post-title" itemprop="name headline">Regex Python re module</h1>
         
 
         <div class="post-meta">
@@ -352,8 +352,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-25T19:25:01+08:00">
-                2018-01-25
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-29T21:21:32+08:00">
+                2018-07-29
               </time>
             
 
@@ -375,8 +375,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Write/" itemprop="url" rel="index">
-                    <span itemprop="name">Write</span>
+                  <a href="/categories/Tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
                   </a>
                 </span>
 
@@ -393,9 +393,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/01/25/2018-01-25-regret/#comments" itemprop="discussionUrl">
+                <a href="/2018/07/29/2018-07-29-PythonRegex/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/01/25/2018-01-25-regret/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2018/07/29/2018-07-29-PythonRegex/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -403,7 +403,7 @@
 
           
           
-             <span id="/2018/01/25/2018-01-25-regret/" class="leancloud_visitors" data-flag-title="悔">
+             <span id="/2018/07/29/2018-07-29-PythonRegex/" class="leancloud_visitors" data-flag-title="Regex Python re module">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -439,124 +439,496 @@
       
 
       
-        <blockquote class="blockquote-center"> 争此念,争此日,争此生!</blockquote>
+        <blockquote class="blockquote-center"> python regex matachar  </blockquote>
 <a id="more"></a>
-<h1>一念 ?</h1>
+<h1>正则表达式</h1>
+<p>~<a href="https://book.douban.com/subject/2154713/" target="_blank" rel="noopener">精通正则表达式 (豆瓣)</a></p>
+<h2 id="术语">术语</h2>
 <ul>
-<li>醒后悔昏时:
+<li>regex 正则</li>
+<li>matching 匹配</li>
+<li>metacharacter 元字符</li>
+<li>flavor 流派</li>
+<li>subexpression 子表达式</li>
+<li>character 字符</li>
+</ul>
+<h2 id="识别对象">识别对象</h2>
 <ul>
-<li>可惜只是梦.</li>
-<li>怎么又睡迟?</li>
-<li>为何又醒晚?</li>
+<li>行</li>
+<li>字符</li>
+</ul>
+<h1>Python re 模块</h1>
+<p>~ <a href="https://docs.python.org/3.6/library/re.html#re.sub" target="_blank" rel="noopener">6.2. re — Regular expression operations — Python 3.6.6 documentation</a></p>
+<ul>
+<li>
+<p>Q python 中正则表达式<code>re</code>模块元字符的含义</p>
+</li>
+<li>
+<p>NO flag</p>
+<ul>
+<li>default mode</li>
 </ul>
 </li>
-<li>昏前悔醒时:
+<li>
+<p>flag</p>
 <ul>
-<li>为何又懈怠?</li>
-<li>怎么又分心?</li>
-<li>要是梦多好.</li>
+<li><a href="https://docs.python.org/3.6/library/re.html#re.DOTALL" target="_blank" rel="noopener">DOTALL</a></li>
+<li><a href="https://docs.python.org/3.6/library/re.html#re.MULTILINE" target="_blank" rel="noopener">MULTILINE</a></li>
 </ul>
 </li>
-<li>一念灭.</li>
+<li>
+<p>O Default 应该就够用了...</p>
+</li>
 </ul>
-<h1>一日 ?</h1>
+<h2 id="basic-matachar">Basic matachar</h2>
 <ul>
-<li>午悔晨:
+<li><code>.</code>
 <ul>
-<li>当有之意,不多坚定?</li>
+<li>matches any character except a newline.</li>
+<li>任意字符</li>
 </ul>
 </li>
-<li>晚悔午:
+<li><code>^</code>
 <ul>
-<li>当有之行,不多慎笃?</li>
+<li>the start of the string</li>
+<li>行首</li>
 </ul>
 </li>
-<li>夜悔晚:
+<li><code>$</code>
 <ul>
-<li>当有之善,不多改过?</li>
+<li>the end of the string or just before the newline at the end of the string</li>
+<li>行尾</li>
 </ul>
 </li>
-<li>晨悔昨夜:
+<li><code>*</code>
 <ul>
-<li>当有之果,失之奈何!?</li>
+<li>match 0 or more repetitions of the preceding RE</li>
+<li>重复0+次</li>
 </ul>
 </li>
-<li>一日失.</li>
-</ul>
-<h1>一生 ?</h1>
+<li><code>+</code>
 <ul>
-<li>小学悔幼园:
-<ul>
-<li>作业近无,</li>
-<li>何不多嬉闹?</li>
-<li>哭声几多,</li>
-<li>欢笑甚少.</li>
+<li>match 1 or more repetitions of the preceding RE</li>
+<li>重复1+次</li>
 </ul>
 </li>
-<li>中学悔小学:
+<li><code>?</code>
 <ul>
-<li>为何不用功?</li>
+<li>match 0 or 1 repetitions of the preceding RE</li>
+<li>匹配0或1次</li>
 </ul>
 </li>
-<li>大学悔中学:
+<li><code>*?</code>, <code>+?</code>, <code>??</code>
 <ul>
-<li>为何还不用功?</li>
+<li><code>*</code>, <code>+</code>, <code>?</code>
+<ul>
+<li><strong>greedy</strong>: match as much as ppissible</li>
+<li>后加一个 <code>?</code> =&gt; non-greedy: as few characters as possible will be matched</li>
 </ul>
 </li>
-<li>工作悔大学:
+<li>例子:
 <ul>
-<li>为何徒劳用功?</li>
-</ul>
-</li>
-<li>中年悔青年:
+<li><code>&lt;a&gt; b &lt;c&gt;</code>
 <ul>
-<li>红尘勘破,</li>
-<li>用个屁功!</li>
-</ul>
-</li>
-<li>老年悔中年:
-<ul>
-<li>时光易逝,</li>
-<li>何不勇攀登?</li>
-<li>幸福甚少,</li>
-<li>虚度几多.</li>
-</ul>
-</li>
-<li>一生猝.</li>
-</ul>
-<h1>何如!?</h1>
-<ul>
-<li>苦,
-<ul>
-<li>一念灭,念念难生;</li>
-<li>一日失,日日无得;</li>
-<li>一生猝,生生皆悔恨;</li>
-</ul>
-</li>
-<li>实,
-<ul>
-<li>一日之得失,在念念明灭,</li>
-<li>一生之无憾,在日日累得.</li>
-</ul>
-</li>
-<li>故,
-<ul>
-<li>争一念,乃争一日,乃争一生.</li>
-</ul>
-</li>
-<li>而,
-<ul>
-<li>正当时!</li>
-<li>争此念,争此日,争此生!</li>
-<li>莫失莫忘,莫悔莫憾.</li>
-<li>行有所止,念有所善.</li>
+<li><code>&lt;.*&gt;</code> =&gt; <code>&lt;a&gt; b &lt;c&gt;</code></li>
+<li><code>&lt;.*?&gt;</code> =&gt; <code>&lt;a&gt;</code></li>
 </ul>
 </li>
 </ul>
-<h2 id="timelog">Timelog</h2>
+</li>
+</ul>
+</li>
+<li><code>{m}</code>
 <ul>
-<li>180125 <code>1T</code> 初稿成</li>
-<li>180125 <code>2T</code> 修改发布</li>
+<li>exactly m copies of the previous RE should be matched</li>
+<li>指定次数重复</li>
+</ul>
+</li>
+<li><code>{m,n}</code>
+<ul>
+<li>match from m to n repetitions of the preceding RE</li>
+<li><strong>greedy</strong> : as many repetitions as possible</li>
+<li>指定重复次数区间
+<ul>
+<li>省略 <code>m</code>,下限为0</li>
+<li>省略 <code>n</code>,上限无穷大</li>
+<li><code>,</code> 不能省略</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>[]</code>
+<ul>
+<li>字符组
+<ul>
+<li>内部有自己的规则
+<ul>
+<li>元字符在[]失去特殊意义,变为匹配的普通字符
+<ul>
+<li><code>[(+*)]</code> =&gt;  <code>(</code>, <code>+</code>, <code>*</code>, or <code>)</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><code>或</code> 的关系
+<ul>
+<li>[amk] =&gt; <code>a</code> or <code>m</code> or <code>k</code></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><code>-</code> 表范围
+<ul>
+<li>[0-9]</li>
+<li>[a-z]</li>
+</ul>
+</li>
+<li><code>^</code>表非集
+<ul>
+<li>[^5] =&gt; 任何非5的字符</li>
+<li>[^^] =&gt; 匹配任何非<code>^</code>的字符</li>
+</ul>
+</li>
+<li><code>[</code>
+<ul>
+<li>在字符组内匹配<code>[</code>
+<ul>
+<li>转义<code>\[</code>
+<ul>
+<li><code>[()[\]{}]</code></li>
+</ul>
+</li>
+<li>放在 beginning
+<ul>
+<li><code>[]()[{}</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><code>|</code>
+<ul>
+<li>任意REs表达式的<code>或</code>关系</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><code>()</code>
+<ul>
+<li>group</li>
+</ul>
+</li>
+</ul>
+<h2 id="matachar-extension">matachar Extension</h2>
+<ul>
+<li><code>(?...)</code>
+<ul>
+<li>extension notation</li>
+</ul>
+</li>
+<li><code>(?aiLmsux)</code>
+<ul>
+<li><code>aiLmsux</code> 任意字符组合, set Flags for the entire regular expression.:
+<ul>
+<li>re.A (ASCII-only matching),</li>
+<li>re.I (ignore case),</li>
+<li>re.L (locale dependent),  [w]</li>
+<li>re.M (multi-line),</li>
+<li>re.S (dot matches all),</li>
+<li>re.U (Unicode matching),</li>
+<li>re.X (verbose), [w]</li>
+<li>[w]=&gt;<a href="https://docs.python.org/3.6/library/re.html#contents-of-module-re" target="_blank" rel="noopener">6.2. re — Regular expression operations — Python 3.6.6 documentation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<p><code>(?:...)</code></p>
+<ul>
+<li>匹配在括号内的任何字符(非捕获版本),字符串无法操作</li>
+<li>类似 (...), 但是不表示一个组
+<ul>
+<li><code>(&lt;)?(\w+@\w+(?:\.\w+)+)(?(1)&gt;|$)</code></li>
+<li>需要用嵌套(())时使用</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><code>(?imsx-imsx:...)</code></p>
+<ul>
+<li>3.6 only</li>
+<li>(?imx: re) 在括号中使用i, m, 或 x 可选标志</li>
+<li>(?-imx: re) 在括号中不使用i, m, 或 x 可选标志</li>
+</ul>
+</li>
+<li>
+<p><code>(?P&lt;name&gt;...)</code></p>
+<ul>
+<li>给 group 命名
+<ul>
+<li><code>(?P&lt;quote&gt;['&quot;]).*?(?P=quote)</code>
+<ul>
+<li><code>(?P&lt;quote&gt;['&quot;])</code>
+<ul>
+<li>内容为<code>['&quot;]</code> 命名为<code>name</code>的组</li>
+</ul>
+</li>
+<li><code>(?P=quote)</code>
+<ul>
+<li>调用这个组</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><code>(?P=name)</code></p>
+<ul>
+<li>存储调用&quot;name&quot;的 group(即复杂对应()内内容)
+<ul>
+<li>调用方式
+<ul>
+<li>同一个 pattern 内调用
+<ul>
+<li><code>(?P=name)</code></li>
+<li><code>\1</code></li>
+</ul>
+</li>
+<li>匹配对象的调用( match object m)
+<ul>
+<li><code>m.group('quote')</code></li>
+<li><code>m.end('quote')</code></li>
+<li>...</li>
+</ul>
+</li>
+<li>re.rub()函数的 repl 变量内调用
+<ul>
+<li><code>\g&lt;quote&gt;</code></li>
+<li><code>\g&lt;1&gt;</code></li>
+<li><code>\1</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><code>(?#...)</code></p>
+<ul>
+<li>A comment, ignore</li>
+</ul>
+</li>
+<li>
+<p><code>(?=...)</code></p>
+<ul>
+<li>lookahead assertion
+<ul>
+<li><code>Isaac (?=Asimov)</code>
+<ul>
+<li>只匹配跟在<code>Asimov</code> 后的 <code>Isaac</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><code>(?!...)</code></p>
+<ul>
+<li>= 的非集
+<ul>
+<li><code>Isaac (?!Asimov)</code>
+<ul>
+<li>只匹配<strong>不</strong>跟在<code>Asimov</code> 后的 <code>Isaac</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><code>(?&lt;=...),,,</code></p>
+<ul>
+<li>a positive lookbehind assertion
+<ul>
+<li>搜前有<code>...</code>的<code>,,,</code>字符串
+<ul>
+<li>O 匹配<code>...,,,</code>但是返回的结果只有<code>,,,</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>...</code>  only match strings of some fixed length
+<ul>
+<li>只能匹配固定长度字符( py3.5+ 支持)</li>
+<li>O <code>abc</code> or <code>a|b</code></li>
+<li>X <code>a*</code> , <code>a{3,4}</code></li>
+</ul>
+</li>
+<li><code>?&lt;=abc)def</code> match <code>abcdef</code> ,match object<code>def</code>  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> re</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>m = re.search(<span class="string">'(?&lt;=abc)def'</span>, <span class="string">'abcdef'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>m.group(<span class="number">0</span>)</span><br><span class="line"><span class="string">'def'</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li>
+<p><code>(?&lt;!...)</code></p>
+<ul>
+<li>a negative lookbehind assertion.</li>
+<li><code>(?&lt;=...),,,</code>的非集</li>
+</ul>
+</li>
+<li>
+<p><code>(?(id/name)yes-pattern|no-pattern)</code></p>
+</li>
+<li>
+<p>e.g</p>
+<ul>
+<li>邮箱匹配 <code>(&lt;)?(\w+@\w+(?:\.\w+)+)(?(1)&gt;|$)</code>
+<ul>
+<li><code>(?(1)&gt;|$)</code>
+<ul>
+<li>如果(1)存在,则<code>&gt;</code>存在,否则就是结尾<code>$</code></li>
+<li>(1) 是第一个括号内容 即(&lt;)</li>
+</ul>
+</li>
+<li>O <code>&lt;user@host.com&gt;</code> as well as <code>user@host.com</code></li>
+<li>X <code>&lt;user@host.com</code> nor <code>user@host.com&gt;</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="special-matechar">Special \ matechar</h2>
+<ul>
+<li>
+<p><code>\Number</code></p>
+<ul>
+<li>指代第 Number 个<code>()</code> group 中的内容
+<ul>
+<li><code>(.+) \1</code>
+<ul>
+<li>O 'the the' or '55 55'</li>
+<li>X  but not 'thethe'</li>
+<li>注意空格</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>\1...\9 匹配第n个分组的内容.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>\A</p>
+<ul>
+<li>匹配字符串开始</li>
+</ul>
+</li>
+<li>
+<p>\b</p>
+<ul>
+<li>匹配一个单词边界的空字符,也就是指单词和空格间的位置.</li>
+</ul>
+<ul>
+<li>'er\b' 可以匹配&quot;never&quot; 中的 'er',但不能匹配 &quot;verb&quot; 中的 'er'.</li>
+</ul>
+</li>
+<li>
+<p>\B</p>
+<ul>
+<li>匹配非单词边界. '</li>
+<li>'er\B' 能匹配 &quot;verb&quot; 中的 'er',但不能匹配 &quot;never&quot; 中的 'er'.</li>
+</ul>
+</li>
+<li>
+<p>\d</p>
+<ul>
+<li>匹配任意数字,等价于 [0-9].</li>
+</ul>
+</li>
+<li>
+<p>\D</p>
+<ul>
+<li>匹配任意非数字</li>
+</ul>
+</li>
+<li>
+<p>\w</p>
+<ul>
+<li>匹配字母数字及下划线</li>
+</ul>
+</li>
+<li>
+<p>\W</p>
+<ul>
+<li>匹配非字母数字及下划线</li>
+</ul>
+</li>
+<li>
+<p>\s</p>
+<ul>
+<li>匹配任意空白字符,等价于 [\t\n\r\f].</li>
+</ul>
+</li>
+<li>
+<p>\S</p>
+<ul>
+<li>匹配任意非空字符</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<p>\Z</p>
+<ul>
+<li>匹配字符串结束,如果是存在换行,只匹配到换行前的结束字符串.</li>
+</ul>
+</li>
+<li>
+<p>\z</p>
+<ul>
+<li>匹配字符串结束</li>
+</ul>
+</li>
+<li>
+<p>\G</p>
+<ul>
+<li>匹配最后匹配完成的位置.</li>
+</ul>
+</li>
+</ul>
+<h2 id="其他">其他</h2>
+<ul>
+<li>
+<p>search() vs. match()</p>
+<ul>
+<li>match 搜索字符首位</li>
+<li>search 搜索任意位置</li>
+</ul>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>re.match(<span class="string">"c"</span>, <span class="string">"abcdef"</span>)    <span class="comment"># No match</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>re.search(<span class="string">"c"</span>, <span class="string">"abcdef"</span>)   <span class="comment"># Match</span></span><br><span class="line">&lt;_sre.SRE_Match object; span=(<span class="number">2</span>, <span class="number">3</span>), match=<span class="string">'c'</span>&gt;</span><br></pre></td></tr></table></figure>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>re.match(<span class="string">"c"</span>, <span class="string">"abcdef"</span>)    <span class="comment"># No match</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>re.search(<span class="string">"^c"</span>, <span class="string">"abcdef"</span>)  <span class="comment"># No match</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>re.search(<span class="string">"^a"</span>, <span class="string">"abcdef"</span>)  <span class="comment"># Match</span></span><br><span class="line">&lt;_sre.SRE_Match object; span=(<span class="number">0</span>, <span class="number">1</span>), match=<span class="string">'a'</span>&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>span()起始位置</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line">print(re.match(<span class="string">'www'</span>, <span class="string">'www.runoob.com'</span>).span())  <span class="comment"># 在起始位置匹配</span></span><br><span class="line">print(re.match(<span class="string">'com'</span>, <span class="string">'www.runoob.com'</span>))         <span class="comment"># 不在起始位置匹配</span></span><br></pre></td></tr></table></figure>
+</li>
 </ul>
 
       
@@ -607,7 +979,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://yoursite.com/2018/01/25/2018-01-25-regret/" title="悔">http://yoursite.com/2018/01/25/2018-01-25-regret/</a>
+    <a href="http://yoursite.com/2018/07/29/2018-07-29-PythonRegex/" title="Regex Python re module">http://yoursite.com/2018/07/29/2018-07-29-PythonRegex/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -622,7 +994,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/poem/" rel="tag"># poem</a>
+            <a href="/tags/python-regex/" rel="tag"># python, regex</a>
           
         </div>
       
@@ -635,8 +1007,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/14/2017-08-14-anaconda/" rel="next" title="Anaconda & JupyterNotebook 探索">
-                <i class="fa fa-chevron-left"></i> Anaconda & JupyterNotebook 探索
+              <a href="/2018/07/27/2018-07-27-Fantasy/" rel="next" title="幻想">
+                <i class="fa fa-chevron-left"></i> 幻想
               </a>
             
           </div>
@@ -644,10 +1016,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/01/27/2018-01-27-codeSence/" rel="prev" title="障">
-                障 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -858,7 +1226,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">一念 ?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">一日 ?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">一生 ?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">何如!?</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#timelog"><span class="nav-number">4.1.</span> <span class="nav-text">Timelog</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">正则表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#术语"><span class="nav-number">1.1.</span> <span class="nav-text">术语</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#识别对象"><span class="nav-number">1.2.</span> <span class="nav-text">识别对象</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">Python re 模块</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#basic-matachar"><span class="nav-number">2.1.</span> <span class="nav-text">Basic matachar</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#matachar-extension"><span class="nav-number">2.2.</span> <span class="nav-text">matachar Extension</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#special-matechar"><span class="nav-number">2.3.</span> <span class="nav-text">Special \ matechar</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他"><span class="nav-number">2.4.</span> <span class="nav-text">其他</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -1022,9 +1390,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/2018/01/25/2018-01-25-regret/';
-          this.page.identifier = '2018/01/25/2018-01-25-regret/';
-          this.page.title = '悔';
+          this.page.url = 'http://yoursite.com/2018/07/29/2018-07-29-PythonRegex/';
+          this.page.identifier = '2018/07/29/2018-07-29-PythonRegex/';
+          this.page.title = 'Regex Python re module';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://https-nbr-hugh-github-io.disqus.com/embed.js';
