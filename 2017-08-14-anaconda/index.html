@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="notebook," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="NBR's Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="编程环境与笔记工具初探">
+<meta name="keywords" content="notebook">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Anaconda &amp; JupyterNotebook 探索">
+<meta property="og:url" content="http://yoursite.com/2017-08-14-anaconda/index.html">
+<meta property="og:site_name" content="NBR&#39;s Blog">
+<meta property="og:description" content="编程环境与笔记工具初探">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-01-25T12:16:49.569Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Anaconda &amp; JupyterNotebook 探索">
+<meta name="twitter:description" content="编程环境与笔记工具初探">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: 'NFRMAN54TN',
+      apiKey: '198b4b66da245f185555c205f32f97e3',
+      indexName: 'dev_search',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017-08-14-anaconda/"/>
+
+
+
+
+
+  <title>Anaconda & JupyterNotebook 探索 | NBR's Blog</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?41a1ddcf79e1adefc6d3cdc69acbbcb4";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">NBR's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Writing & Recording</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017-08-14-anaconda/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NBR-hugh">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NBR's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Anaconda & JupyterNotebook 探索</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-14T23:44:17+08:00">
+                2017-08-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Tool/" itemprop="url" rel="index">
+                    <span itemprop="name">Tool</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017-08-14-anaconda/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2017-08-14-anaconda/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2017-08-14-anaconda/" class="leancloud_visitors" data-flag-title="Anaconda & JupyterNotebook 探索">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i> 总阅读量
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote class="blockquote-center"> 编程环境与笔记工具初探 </blockquote>
+<a id="more"></a>
+<h3 id="question">Question</h3>
+<ul>
+<li>如何查看自己电脑中安装了哪些版本的 Python ？
+<ul>
+<li><code>$ pyenv versions</code></li>
+</ul>
+</li>
+<li>如何切换、运行不同版本的 Python 呢？
+<ul>
+<li>使用版本与包管理工具如 Anaconda,pyenv等来进行管理
+<ul>
+<li><code>$ pyenv local &lt;version&gt;</code></li>
+<li><code>$ source activate ~/py27</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Python2 和 Python3 对应的开源包、软件包是否可以通用？
+<ul>
+<li><em>不能,下载的开源宝和软件包下载在对应语言文件目录下</em></li>
+</ul>
+</li>
+<li>Anconda 是什么?
+<ul>
+<li>包管理</li>
+<li>不同版本python环境管理</li>
+</ul>
+</li>
+<li>Jupyter Notebook是什么?
+<ul>
+<li>可运行、可交互的在线工具，可把代码和笔记舒爽地呈现在同一个页面，并导出为 .ipynb .md .py 等格式.借助 nbviewer社会化分享</li>
+</ul>
+</li>
+</ul>
+<h3 id="action">Action</h3>
+<h4 id="1-寻找anaconda官方文档">1. 寻找Anaconda官方文档</h4>
+<ul>
+<li><a href="https://docs.continuum.io/anaconda/install/mac-os" target="_blank" rel="noopener">Installing on macOS | Continuum Analytics: Documentation</a></li>
+</ul>
+<h4 id="2-安装-anaconda3">2. 安装 Anaconda3</h4>
+<ul>
+<li>两种安装方式:<code>图形界面安装</code>与<code>命令行界面安装</code></li>
+<li>两种版本 <code>PY2.7</code> 与 <code>py3.6</code>(根据默认环境选择)</li>
+<li>选择 <code>命令行界面安装</code>,<code>py3.6</code>版本
+<ul>
+<li>
+<p>01:下载命令行版安装包<a href="https://www.continuum.io/downloads#macos" target="_blank" rel="noopener">macOS installer</a></p>
+</li>
+<li>
+<p>02:[可选]  cryptographic hash verification(哈希值验证)</p>
+<ul>
+<li>到达安装包所在文件夹
+<ul>
+<li><code>$ cd ~/Downloads</code></li>
+</ul>
+</li>
+<li>验证安装包的哈希值
+<ul>
+<li>
+<p>下载包的哈希值</p>
+<pre><code> $ md5 Anaconda3-4.4.0-MacOSX-x86_64.sh 
+ 
+ MD5 (Anaconda3-4.4.0-MacOSX-x86_64.sh) = 3958ac6cb84731e560dd833256aa5b15
+</code></pre>
+</li>
+<li>
+<p>对比官方文档给出的<a href="https://docs.continuum.io/anaconda/install/hashes/Anaconda3-4.4.0-MacOSX-x86_64.sh-hash" target="_blank" rel="noopener">哈希值</a>,一致即可,否则联系官方或者换一个安装包</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>03:安装到 py3.6</p>
+<ul>
+<li><code>bash ~/Downloads/Anaconda3-4.4.0-MacOSX-x86_64.sh</code></li>
+</ul>
+</li>
+<li>
+<p>04:跟随命令行提示操作</p>
+<ul>
+<li>确认 license 内容, yes</li>
+<li>确认安装路径,enter</li>
+<li>开始安装,需要等待一段时间</li>
+<li>出现<code>Thank you for installing Anaconda3!</code>即安装成功</li>
+</ul>
+</li>
+<li>
+<p>05:用命令行运行 <code>conda</code></p>
+<ul>
+<li>在命令行中输入</li>
+<li><code>$ export PATH=~/anaconda3/bin:$PATH</code>
+<ul>
+<li>Note: 根据下载版本不同路径不同,参考<a href="https://stackoverflow.com/questions/18675907/how-to-run-conda" target="_blank" rel="noopener">这里</a></li>
+</ul>
+</li>
+<li>为了避免每次重启 shell 都要输入一次 <code>$ export PATH=~/anaconda3/bin:$PATH</code>
+<ul>
+<li>
+<p>在 shell 的配置文件中输入该命令</p>
+</li>
+<li>
+<p>不同 shell 配置文件名称不同</p>
+</li>
+<li>
+<p>zsh 的配置文件为 <code>.zshrc</code></p>
+</li>
+<li>
+<p>打开 <code>.zshrc</code></p>
+<pre><code>      $ cd ~ 
+      $ vim .zshrc
+</code></pre>
+</li>
+<li>
+<p><code>i</code>插入模式下输入 <code>export PATH=~/anaconda3/bin:$PATH</code></p>
+</li>
+<li>
+<p>重启 shell 即可</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>06:验证是否安装成功</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ conda --version</span><br><span class="line">conda 4.3.21</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="3-使用-anaconda3">3. 使用 Anaconda3</h4>
+<ul>
+<li><a href="https://docs.continuum.io/anaconda/user-guide/getting-started" target="_blank" rel="noopener">Getting started</a></li>
+</ul>
+<blockquote>
+<p>If you prefer to use a terminal window or command prompt, download the <a href="http://conda.pydata.org/docs/using/cheatsheet.html" target="_blank" rel="noopener">conda cheat sheet</a> , try the <a href="http://conda.pydata.org/docs/test-drive.html" target="_blank" rel="noopener">conda test drive</a> and learn more about <a href="http://conda.pydata.org/docs/using" target="_blank" rel="noopener">using conda</a>.</p>
+</blockquote>
+<ul>
+<li>
+<p>管理 conda</p>
+ <figure class="highlight zsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ conda info             <span class="comment"># 显示Anaconda的安装信息</span></span><br><span class="line">$ conda list             <span class="comment"># 现有环境下的包列表</span></span><br><span class="line">$ conda update conda     <span class="comment"># 更新 conda</span></span><br><span class="line">$ conda update anaconda  <span class="comment"># 更新当前环境下所有包(anaconda 上有的)</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li>
+<p>管理 python 版本</p>
+ <figure class="highlight zsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建新的环境</span></span><br><span class="line">$ conda create --prefix ~/py27 python=2.7</span><br><span class="line"><span class="comment"># 删除创建的环境</span></span><br><span class="line">$ conda remove --prefix ~/py27 --all</span><br><span class="line">or</span><br><span class="line">$ rm -rf ~/py27</span><br><span class="line"></span><br><span class="line"><span class="comment"># 激活某个环境</span></span><br><span class="line">$ <span class="built_in">source</span> activate ~/py27</span><br><span class="line"><span class="comment"># 退出激活的环境</span></span><br><span class="line">$ <span class="built_in">source</span> deactivate ~/py27</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>管理 packages</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ conda search jupyter    # 查找包(jupyter)</span><br><span class="line">$ conda install jupyter   # 安装包(jupyter)</span><br><span class="line">$ jupyter-notebook        # 运行安装的包(jupyter)</span><br><span class="line"></span><br><span class="line"># 在特定环境下安装/卸载包</span><br><span class="line">$ conda install --prefix ~/py27 &lt;packagename&gt; &lt;packagename&gt;</span><br><span class="line">$ conda remove --prefix ~/py27 &lt;packagename&gt; &lt;packagename&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="4-使用-jupyter-notebook">4. 使用 Jupyter Notebook</h4>
+<ul>
+<li>
+<p>Anaconda3 自带 Jupyter Notebook</p>
+</li>
+<li>
+<p>运行 JN, 会自动读取当前文件目录</p>
+</li>
+<li>
+<p>操作</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ jupyter-notebook # 运行</span><br><span class="line">control + C        # 完全退出</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>快捷键(updating)</p>
+<ul>
+<li>cmd 模式</li>
+<li>编辑 模式
+<ul>
+<li>Basic navigation: <code>enter, shift-enter, up/k, down/j</code></li>
+<li>Saving the notebook: <code>s</code></li>
+<li>Change Cell types: <code>y, m, 1-6, t</code></li>
+<li>Cell creation: <code>a, b</code></li>
+<li>Cell editing: <code>x, c, v, d, z</code></li>
+<li>Kernel operations: <code>i, 0 (press twice)</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>社会化分享</p>
+<ul>
+<li><a href="https://github.com/jupyter/nbviewer" target="_blank" rel="noopener">nbviewer</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="error">Error</h3>
+<h4 id="e1-anaconda3-下载成功后-无法在-cmd-中打开">E1: Anaconda3 下载成功后,无法在 cmd 中打开</h4>
+<ul>
+<li>错误信息
+<ul>
+<li><code>zsh: command not found: conda</code></li>
+<li><code>bash: command not found: conda</code></li>
+</ul>
+</li>
+<li>分析
+<ul>
+<li>应该是shell配置哪里没有到位</li>
+</ul>
+</li>
+<li>搜索
+<ul>
+<li>关键词: <code>bash: command not found: conda</code></li>
+<li>方案01
+<ul>
+<li><a href="https://stackoverflow.com/questions/18675907/how-to-run-conda" target="_blank" rel="noopener">python - How to run Conda? - Stack Overflow</a></li>
+<li>输入 <code>$ export PATH=~/anaconda3/bin:$PATH</code></li>
+<li>验证 <code>conda --version</code></li>
+<li>成功 <code>conda 4.3.21</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="reference">Reference</h3>
+<ul>
+<li><a href="http://nbviewer.jupyter.org/github/jupyter/notebook/blob/master/docs/source/examples/Notebook/Notebook%20Basics.ipynb" target="_blank" rel="noopener">Jupyter Notebook Viewer</a></li>
+</ul>
+<h3 id="timelog">Timelog</h3>
+<ul>
+<li>170813 2h    chrome 下载失败2次,未断点续下,改用迅雷下载</li>
+<li>170814 1h    安装 Anaconda3 &amp;  解决 E1</li>
+<li>170814 1h    试验并撰写 anaconda 使用教程/命令表</li>
+<li>170814 30m   Jupter Notebook 尝试</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>:P</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>Donate</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="NBR-hugh WeChat Pay"/>
+        <p>WeChat Pay</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="NBR-hugh Alipay"/>
+        <p>Alipay</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    NBR-hugh
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://yoursite.com/2017-08-14-anaconda/" title="Anaconda & JupyterNotebook 探索">http://yoursite.com/2017-08-14-anaconda/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/" rel="external nofollow" target="_blank">CC BY 4.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/notebook/" rel="tag"># notebook</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017-08-08-BlogCreate/" rel="next" title="博客初创">
+                <i class="fa fa-chevron-left"></i> 博客初创
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018-01-25-regret/" rel="prev" title="悔">
+                悔 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="NBR-hugh" />
+          <p class="site-author-name" itemprop="name">NBR-hugh</p>
+           
+              <p class="site-description motion-element" itemprop="description">春风动百草,兰蕙生我篱.</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">27</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/NBR-hugh" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                    
+                      GitHub
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/9MKmavZvAAyleqm" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                    
+                      Twitter
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/u/2290137932?refer_flag=1005055010_" target="_blank" title="微博">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                    
+                      微博
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.douban.com/people/nbrnb/" target="_blank" title="豆瓣">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                    
+                      豆瓣
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.zhihu.com/people/ni-bi-rong" target="_blank" title="知乎">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                    
+                      知乎
+                    
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+          <div class="cc-license motion-element" itemprop="license">
+            <a href="https://creativecommons.org/licenses/by/4.0/" class="cc-opacity" target="_blank">
+              <img src="/images/cc-by.svg" alt="Creative Commons" />
+            </a>
+          </div>
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#question"><span class="nav-number">1.</span> <span class="nav-text">Question</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#action"><span class="nav-number">2.</span> <span class="nav-text">Action</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-寻找anaconda官方文档"><span class="nav-number">2.1.</span> <span class="nav-text">1. 寻找Anaconda官方文档</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-安装-anaconda3"><span class="nav-number">2.2.</span> <span class="nav-text">2. 安装 Anaconda3</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-使用-anaconda3"><span class="nav-number">2.3.</span> <span class="nav-text">3. 使用 Anaconda3</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-使用-jupyter-notebook"><span class="nav-number">2.4.</span> <span class="nav-text">4. 使用 Jupyter Notebook</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#error"><span class="nav-number">3.</span> <span class="nav-text">Error</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#e1-anaconda3-下载成功后-无法在-cmd-中打开"><span class="nav-number">3.1.</span> <span class="nav-text">E1: Anaconda3 下载成功后,无法在 cmd 中打开</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#reference"><span class="nav-number">4.</span> <span class="nav-text">Reference</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#timelog"><span class="nav-number">5.</span> <span class="nav-text">Timelog</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2016 - 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">NBR-hugh</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i> 总访客
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      人次
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i> 总访问量
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次
+    </span>
+  
+</div>
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://https-nbr-hugh-github-io.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://yoursite.com/2017-08-14-anaconda/';
+          this.page.identifier = '2017-08-14-anaconda/';
+          this.page.title = 'Anaconda & JupyterNotebook 探索';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://https-nbr-hugh-github-io.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=5.1.2"></script>
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("DMxBlQrAc1GPVQISOv3bCQBr-gzGzoHsz", "kbUAzY19gOYz6wWaUy6mBE7B");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
