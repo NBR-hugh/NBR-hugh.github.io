@@ -78,7 +78,7 @@
 <meta property="og:site_name" content="NBR&#39;s Blog">
 <meta property="og:description" content="启程">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-25T12:13:34.787Z">
+<meta property="og:updated_time" content="2018-08-01T17:52:04.679Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="博客初创">
 <meta name="twitter:description" content="启程">
@@ -638,10 +638,49 @@
 </ul>
 </li>
 </ol>
+<h2 id="更新">更新</h2>
+<ul>
+<li>00 利用zsh 的 alias 功能简化发布流程
+<ul>
+<li>
+<p>命令行输入<code>zshrc</code> , 添加相应 alias</p>
+<p>alias hn=&quot;cd ~/Documents/github.nibirong.com/myblog/source/_posts; subl <a href="http://draft.md" target="_blank" rel="noopener">draft.md</a>&quot;
+alias hp=&quot;hexo clean;hexo g;hexo s;hexo server&quot;
+alias hd=&quot;hexo clean;hexo d -g&quot;</p>
+</li>
+<li>
+<p>因此基本博客流程为</p>
+<ul>
+<li><code>hn</code> 创建新 post</li>
+<li><code>hp</code> 生成本地服务器,查看效果</li>
+<li><code>hd</code> 部署到远程服务器</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>01 取消 google font 服务,加快网页的加载速度</li>
+<li>02 重置 url 形式 <code>:Year/:Mouth/:Day/:title</code>
+<ul>
+<li>=&gt; <code>:title</code></li>
+<li>表达更清晰简洁</li>
+<li>晤... 不过浏览统计清零了... 莫名心痛...</li>
+</ul>
+</li>
+<li>03 本地搜索无法使用
+<ul>
+<li>利用 Chrome 开发者工具查看具体指标
+<ul>
+<li>``</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <h2 id="timelog">TimeLog</h2>
 <ul>
-<li>170707 int.</li>
-<li>170708 over.</li>
+<li>180802 <code>2T</code> NBR-hugh add  更新</li>
+<li>170708 NBR-hugh publish</li>
+<li>170707 NBR-hugh init</li>
 </ul>
 
       
@@ -939,7 +978,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#触发"><span class="nav-number">1.</span> <span class="nav-text">触发</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基本信息"><span class="nav-number">2.</span> <span class="nav-text">基本信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建步骤"><span class="nav-number">3.</span> <span class="nav-text">创建步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-git-与-hexo-本地环境的基本配置"><span class="nav-number">3.1.</span> <span class="nav-text">1.Git 与 HEXO 本地环境的基本配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-测试本地环境与初步部署"><span class="nav-number">3.2.</span> <span class="nav-text">2.测试本地环境与初步部署</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-主题更改与配置"><span class="nav-number">3.3.</span> <span class="nav-text">3.主题更改与配置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#问题解决"><span class="nav-number">4.</span> <span class="nav-text">问题解决</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#q0-npm-install-g-hexo-cli安装失败"><span class="nav-number">4.1.</span> <span class="nav-text">Q0:npm install -g hexo-cli安装失败</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#q1-error-with-dtrace-mac-os-x"><span class="nav-number">4.2.</span> <span class="nav-text">Q1:Error with DTrace (Mac OS X)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#日常操作"><span class="nav-number">5.</span> <span class="nav-text">日常操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#timelog"><span class="nav-number">6.</span> <span class="nav-text">TimeLog</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#触发"><span class="nav-number">1.</span> <span class="nav-text">触发</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基本信息"><span class="nav-number">2.</span> <span class="nav-text">基本信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建步骤"><span class="nav-number">3.</span> <span class="nav-text">创建步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-git-与-hexo-本地环境的基本配置"><span class="nav-number">3.1.</span> <span class="nav-text">1.Git 与 HEXO 本地环境的基本配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-测试本地环境与初步部署"><span class="nav-number">3.2.</span> <span class="nav-text">2.测试本地环境与初步部署</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-主题更改与配置"><span class="nav-number">3.3.</span> <span class="nav-text">3.主题更改与配置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#问题解决"><span class="nav-number">4.</span> <span class="nav-text">问题解决</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#q0-npm-install-g-hexo-cli安装失败"><span class="nav-number">4.1.</span> <span class="nav-text">Q0:npm install -g hexo-cli安装失败</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#q1-error-with-dtrace-mac-os-x"><span class="nav-number">4.2.</span> <span class="nav-text">Q1:Error with DTrace (Mac OS X)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#日常操作"><span class="nav-number">5.</span> <span class="nav-text">日常操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更新"><span class="nav-number">6.</span> <span class="nav-text">更新</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#timelog"><span class="nav-number">7.</span> <span class="nav-text">TimeLog</span></a></li></ol></div>
             
 
           </div>
