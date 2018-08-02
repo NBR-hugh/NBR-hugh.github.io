@@ -78,7 +78,7 @@
 <meta property="og:site_name" content="NBR&#39;s Blog">
 <meta property="og:description" content="Hexo  博客的优化提升">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-02T10:55:55.476Z">
+<meta property="og:updated_time" content="2018-08-02T10:58:55.143Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="博客优化">
 <meta name="twitter:description" content="Hexo  博客的优化提升">
@@ -504,19 +504,31 @@
 <p>E01 error at <code>AlgoliaSearchNodeJS</code>/<code>Async._drainQueues</code></p>
   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">➜  myblog git:(master) ✗ hexo algolia</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  [Algolia] Identified 0 posts to index.</span><br><span class="line">FATAL Something&apos;s wrong. Maybe you can find the solution here: http://hexo.io/docs/troubleshooting.html</span><br><span class="line">Error</span><br><span class="line">    at AlgoliaSearchNodeJS.AlgoliaSearchCore (/Users/NBR-hugh/Documents/github.nibirong.com/myblog/node_modules/algoliasearch/src/AlgoliaSearchCore.js:54:11)</span><br><span class="line">    at AlgoliaSearchNodeJS.AlgoliaSearch (/Users/NBR-hugh/Documents/github.nibirong.com/myblog/node_modules/algoliasearch/src/AlgoliaSearch.js:11:21)</span><br><span class="line">    at AlgoliaSearchNodeJS.AlgoliaSearchServer (/Users/NBR-hugh/Documents/github.nibirong.com/myblog/node_modules/algoliasearch/src/server/builds/AlgoliaSearchServer.js:17:17)</span><br><span class="line">    at new AlgoliaSearchNodeJS (/Users/NBR-hugh/Documents/github.nibirong.com/myblog/node_modules/algoliasearch/src/server/builds/node.js:79:23)</span><br><span class="line">    at algoliasearch (/Users/NBR-hugh/Documents/github.nibirong.com/myblog/node_modules/algoliasearch/src/server/builds/node.js:68:10)</span><br><span class="line">    at Hexo.&lt;anonymous&gt; (/Users/NBR-hugh/Documents/github.nibirong.com/myblog/node_modules/hexo-algolia/lib/command.js:68:22)</span><br><span class="line">    at emitNone (events.js:86:13)</span><br><span class="line">    at Hexo.emit (events.js:185:7)</span><br><span class="line">    at execFilter.then.map.then (/Users/NBR-hugh/Documents/github.nibirong.com/myblog/node_modules/hexo/lib/hexo/index.js:404:12)</span><br><span class="line">    at tryCatcher (/Users/NBR-hugh/Documents/github.nibirong.com/myblog/node_modules/bluebird/js/release/util.js:16:23)</span><br><span class="line">    at Promise._settlePromiseFromHandler (/Users/NBR-hugh/Documents/github.nibirong.com/myblog/node_modules/bluebird/js/release/promise.js:512:31)</span><br><span class="line">    at Promise._settlePromise (/Users/NBR-hugh/Documents/github.nibirong.com/myblog/node_modules/bluebird/js/release/promise.js:569:18)</span><br><span class="line">    at Promise._settlePromise0 (/Users/NBR-hugh/Documents/github.nibirong.com/myblog/node_modules/bluebird/js/release/promise.js:614:10)</span><br><span class="line">    at Promise._settlePromises (/Users/NBR-hugh/Documents/github.nibirong.com/myblog/node_modules/bluebird/js/release/promise.js:693:18)</span><br><span class="line">    at Promise._fulfill (/Users/NBR-hugh/Documents/github.nibirong.com/myblog/node_modules/bluebird/js/release/promise.js:638:18)</span><br><span class="line">    at MappingPromiseArray.PromiseArray._resolve (/Users/NBR-hugh/Documents/github.nibirong.com/myblog/node_modules/bluebird/js/release/promise_array.js:126:19)</span><br><span class="line">    at MappingPromiseArray._promiseFulfilled (/Users/NBR-hugh/Documents/github.nibirong.com/myblog/node_modules/bluebird/js/release/map.js:101:18)</span><br><span class="line">    at Promise._settlePromise (/Users/NBR-hugh/Documents/github.nibirong.com/myblog/node_modules/bluebird/js/release/promise.js:574:26)</span><br><span class="line">    at Promise._settlePromise0 (/Users/NBR-hugh/Documents/github.nibirong.com/myblog/node_modules/bluebird/js/release/promise.js:614:10)</span><br><span class="line">    at Promise._settlePromises (/Users/NBR-hugh/Documents/github.nibirong.com/myblog/node_modules/bluebird/js/release/promise.js:693:18)</span><br><span class="line">    at Async._drainQueue (/Users/NBR-hugh/Documents/github.nibirong.com/myblog/node_modules/bluebird/js/release/async.js:133:16)</span><br><span class="line">    at Async._drainQueues (/Users/NBR-hugh/Documents/github.nibirong.com/myblog/node_modules/bluebird/js/release/async.js:143:10)</span><br></pre></td></tr></table></figure>
 <ul>
-<li>A 搜索:<code>hexo algolia error</code></li>
-<li>A 尝试 <a href="https://leunggeorge.github.io/2017/07/09/%E6%89%A7%E8%A1%8Chexo%E6%97%B6%E7%9A%84%E4%B8%80%E4%BA%9B%E6%8A%A5%E9%94%99%E5%A4%84%E7%90%86/" target="_blank" rel="noopener">执行hexo时的一些报错处理 | LeungGeorge's blog</a>
+<li>
+<p>A 搜索:<code>hexo algolia error</code></p>
+</li>
+<li>
+<p>A 尝试 <a href="https://leunggeorge.github.io/2017/07/09/%E6%89%A7%E8%A1%8Chexo%E6%97%B6%E7%9A%84%E4%B8%80%E4%BA%9B%E6%8A%A5%E9%94%99%E5%A4%84%E7%90%86/" target="_blank" rel="noopener">执行hexo时的一些报错处理 | LeungGeorge's blog</a></p>
 <ul>
 <li>
 <blockquote>
-<p>安装hexo-algolia@0.2.0，再执行hexo algolia就可以了
-* X 失败
-- A 搜索 <code>hexo algolia error at AlgoliaSearchNodeJS.AlgoliaSearchCore at Async._drainQueues</code>
-- A 尝试 <a href="https://github.com/iissnan/hexo-theme-next/issues/1710#issuecomment-357332999" target="_blank" rel="noopener">hexo algolia失败 · Issue #1710 · iissnan/hexo-theme-next</a>
-+ &gt; 在 algolia 的 dashboard 里重新创建了一个 API，按照说明文档增加了四个权限。
+<p>安装<code>hexo-algolia@0.2.0</code>，再执行hexo algolia就可以了
+* X 失败</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<p>A 搜索 <code>hexo algolia error at AlgoliaSearchNodeJS.AlgoliaSearchCore at Async._drainQueues</code></p>
+</li>
+<li>
+<p>A 尝试 <a href="https://github.com/iissnan/hexo-theme-next/issues/1710#issuecomment-357332999" target="_blank" rel="noopener">hexo algolia失败 · Issue #1710 · iissnan/hexo-theme-next</a></p>
+<ul>
+<li>
+<blockquote>
+<p>在 algolia 的 dashboard 里重新创建了一个 API，按照说明文档增加了四个权限。
 + &gt; 在站点配置文件 algolia 的设置里，把 adminApiKey 这一栏填入新建 API，而不是原来 API 的 admin KEY。
 + &gt; 然后$ export HEXO_ALGOLIA_INDEXING_KEY = 此 API 的名字，之后就可以成功 hexo algolia 了。
-+ E<br>
 + A 依照提示进行设置,测试:
 * hexo clean
 * hexo g
