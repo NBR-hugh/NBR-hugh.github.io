@@ -73,14 +73,14 @@
 <meta name="description" content="启程">
 <meta name="keywords" content="Hexo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="博客初创">
+<meta property="og:title" content="Hexo 博客初创">
 <meta property="og:url" content="http://yoursite.com/2017-08-08-BlogCreate/index.html">
 <meta property="og:site_name" content="NBR&#39;s Blog">
 <meta property="og:description" content="启程">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-01T17:52:04.679Z">
+<meta property="og:updated_time" content="2018-08-02T08:20:04.879Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="博客初创">
+<meta name="twitter:title" content="Hexo 博客初创">
 <meta name="twitter:description" content="启程">
 
 
@@ -99,9 +99,9 @@
       author: '博主'
     },
     algolia: {
-      applicationID: 'NFRMAN54TN',
-      apiKey: '198b4b66da245f185555c205f32f97e3',
-      indexName: 'dev_search',
+      applicationID: '6GNR6OS3T8',
+      apiKey: 'ae78a0a9fd32bcbbca3c3e457701cbab',
+      indexName: 'NBRhugh',
       hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
@@ -116,7 +116,7 @@
 
 
 
-  <title>博客初创 | NBR's Blog</title>
+  <title>Hexo 博客初创 | NBR's Blog</title>
   
 
 
@@ -245,26 +245,22 @@
   
     <div class="site-search">
       
-  
-  <div class="algolia-popup popup search-popup">
-    <div class="algolia-search">
-      <div class="algolia-search-input-icon">
-        <i class="fa fa-search"></i>
-      </div>
-      <div class="algolia-search-input" id="algolia-search-input"></div>
-    </div>
-
-    <div class="algolia-results">
-      <div id="algolia-stats"></div>
-      <div id="algolia-hits"></div>
-      <div id="algolia-pagination" class="algolia-pagination"></div>
-    </div>
-
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
     <span class="popup-btn-close">
       <i class="fa fa-times-circle"></i>
     </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
   </div>
-
+  <div id="local-search-result"></div>
+</div>
 
 
 
@@ -314,7 +310,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">博客初创</h1>
+          <h1 class="post-title" itemprop="name headline">Hexo 博客初创</h1>
         
 
         <div class="post-meta">
@@ -377,7 +373,7 @@
 
           
           
-             <span id="/2017-08-08-BlogCreate/" class="leancloud_visitors" data-flag-title="博客初创">
+             <span id="/2017-08-08-BlogCreate/" class="leancloud_visitors" data-flag-title="Hexo 博客初创">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -599,7 +595,7 @@
  $ hexo g          #生产静态文件至 public 目录
  $ hexo s --debug  #启动本地服务器(调试模式)
  
- $ hexo s --draft  #本地预览草稿
+ $ hexo s --draft  #本地预览草稿         
 </code></pre>
 </li>
 <li>
@@ -623,62 +619,23 @@
 <ul>
 <li>首页文章显示摘要
 <ul>
-<li>在文章中适当位置插入<code>&lt;!--more--&gt;</code>，该位置之前的部分即为摘要，会显示在首页中。</li>
-</ul>
-</li>
-<li>脚注/上标/下标/缩写
-<ul>
-<li>form: <a href="https://github.com/hexojs/hexo-renderer-markdown-it/blob/master/README.md" target="_blank" rel="noopener">hexo-renderer-markdown-it</a></li>
-<li><code>&lt;sub&gt;</code> H<sub>2</sub>O</li>
-<li><code>&lt;sup&gt;</code> x<sup>2</sup></li>
-<li><code>&lt;ins&gt;</code> <ins>Inserted</ins></li>
-<li>Footnotes <code>^[1]</code></li>
+<li>`<blockquote class="blockquote-center"> 摘要 </blockquote></li>
 </ul>
 </li>
 </ul>
 </li>
 </ol>
-<h2 id="更新">更新</h2>
-<ul>
-<li>00 利用zsh 的 alias 功能简化发布流程
-<ul>
-<li>
-<p>命令行输入<code>zshrc</code> , 添加相应 alias</p>
-<p>alias hn=&quot;cd ~/Documents/github.nibirong.com/myblog/source/_posts; subl <a href="http://draft.md" target="_blank" rel="noopener">draft.md</a>&quot;
-alias hp=&quot;hexo clean;hexo g;hexo s;hexo server&quot;
-alias hd=&quot;hexo clean;hexo d -g&quot;</p>
-</li>
-<li>
-<p>因此基本博客流程为</p>
-<ul>
-<li><code>hn</code> 创建新 post</li>
-<li><code>hp</code> 生成本地服务器,查看效果</li>
-<li><code>hd</code> 部署到远程服务器</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>01 取消 google font 服务,加快网页的加载速度</li>
-<li>02 重置 url 形式 <code>:Year/:Mouth/:Day/:title</code>
-<ul>
-<li>=&gt; <code>:title</code></li>
-<li>表达更清晰简洁</li>
-<li>晤... 不过浏览统计清零了... 莫名心痛...</li>
-</ul>
-</li>
-<li>03 本地搜索无法使用
-<ul>
-<li>利用 Chrome 开发者工具查看具体指标
-<ul>
-<li>``</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<!--more-->`
+<pre><code>        - 添加在正文之前
+- 脚注/上标/下标/缩写
+    - form: [hexo-renderer-markdown-it](https://github.com/hexojs/hexo-renderer-markdown-it/blob/master/README.md)
+     - `&lt;sub&gt;` H&lt;sub&gt;2&lt;/sub&gt;O
+     - `&lt;sup&gt;` x&lt;sup&gt;2&lt;/sup&gt;
+     - `&lt;ins&gt;` &lt;ins&gt;Inserted&lt;/ins&gt;
+     - Footnotes `^[1]`
+</code></pre>
 <h2 id="timelog">TimeLog</h2>
 <ul>
-<li>180802 <code>2T</code> NBR-hugh add  更新</li>
 <li>170708 NBR-hugh publish</li>
 <li>170707 NBR-hugh init</li>
 </ul>
@@ -731,7 +688,7 @@ alias hd=&quot;hexo clean;hexo d -g&quot;</p>
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://yoursite.com/2017-08-08-BlogCreate/" title="博客初创">http://yoursite.com/2017-08-08-BlogCreate/</a>
+    <a href="http://yoursite.com/2017-08-08-BlogCreate/" title="Hexo 博客初创">http://yoursite.com/2017-08-08-BlogCreate/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -978,7 +935,7 @@ alias hd=&quot;hexo clean;hexo d -g&quot;</p>
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#触发"><span class="nav-number">1.</span> <span class="nav-text">触发</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基本信息"><span class="nav-number">2.</span> <span class="nav-text">基本信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建步骤"><span class="nav-number">3.</span> <span class="nav-text">创建步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-git-与-hexo-本地环境的基本配置"><span class="nav-number">3.1.</span> <span class="nav-text">1.Git 与 HEXO 本地环境的基本配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-测试本地环境与初步部署"><span class="nav-number">3.2.</span> <span class="nav-text">2.测试本地环境与初步部署</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-主题更改与配置"><span class="nav-number">3.3.</span> <span class="nav-text">3.主题更改与配置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#问题解决"><span class="nav-number">4.</span> <span class="nav-text">问题解决</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#q0-npm-install-g-hexo-cli安装失败"><span class="nav-number">4.1.</span> <span class="nav-text">Q0:npm install -g hexo-cli安装失败</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#q1-error-with-dtrace-mac-os-x"><span class="nav-number">4.2.</span> <span class="nav-text">Q1:Error with DTrace (Mac OS X)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#日常操作"><span class="nav-number">5.</span> <span class="nav-text">日常操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更新"><span class="nav-number">6.</span> <span class="nav-text">更新</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#timelog"><span class="nav-number">7.</span> <span class="nav-text">TimeLog</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#触发"><span class="nav-number">1.</span> <span class="nav-text">触发</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基本信息"><span class="nav-number">2.</span> <span class="nav-text">基本信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建步骤"><span class="nav-number">3.</span> <span class="nav-text">创建步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-git-与-hexo-本地环境的基本配置"><span class="nav-number">3.1.</span> <span class="nav-text">1.Git 与 HEXO 本地环境的基本配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-测试本地环境与初步部署"><span class="nav-number">3.2.</span> <span class="nav-text">2.测试本地环境与初步部署</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-主题更改与配置"><span class="nav-number">3.3.</span> <span class="nav-text">3.主题更改与配置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#问题解决"><span class="nav-number">4.</span> <span class="nav-text">问题解决</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#q0-npm-install-g-hexo-cli安装失败"><span class="nav-number">4.1.</span> <span class="nav-text">Q0:npm install -g hexo-cli安装失败</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#q1-error-with-dtrace-mac-os-x"><span class="nav-number">4.2.</span> <span class="nav-text">Q1:Error with DTrace (Mac OS X)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#日常操作"><span class="nav-number">5.</span> <span class="nav-text">日常操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#timelog"><span class="nav-number">6.</span> <span class="nav-text">TimeLog</span></a></li></ol></div>
             
 
           </div>
@@ -1144,7 +1101,7 @@ alias hd=&quot;hexo clean;hexo d -g&quot;</p>
         var disqus_config = function () {
           this.page.url = 'http://yoursite.com/2017-08-08-BlogCreate/';
           this.page.identifier = '2017-08-08-BlogCreate/';
-          this.page.title = '博客初创';
+          this.page.title = 'Hexo 博客初创';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://https-nbr-hugh-github-io.disqus.com/embed.js';
@@ -1180,7 +1137,7 @@ alias hd=&quot;hexo clean;hexo d -g&quot;</p>
     var isfetched = false;
     var isXml = true;
     // Search DB path;
-    var search_path = "";
+    var search_path = "search.xml";
     if (search_path.length === 0) {
       search_path = "search.xml";
     } else if (/json$/i.test(search_path)) {
@@ -1493,19 +1450,6 @@ alias hd=&quot;hexo clean;hexo d -g&quot;</p>
   </script>
 
 
-
-
-  
-  
-  
-  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
-
-  
-  
-  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
-  
-
-  <script src="/js/src/algolia-search.js?v=5.1.2"></script>
 
 
 
