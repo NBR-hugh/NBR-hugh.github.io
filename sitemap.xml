@@ -4,7 +4,14 @@
   <url>
     <loc>http://yoursite.com/about/index.html</loc>
     
-    <lastmod>2018-08-03T13:11:10.141Z</lastmod>
+    <lastmod>2018-08-03T15:15:29.028Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018-07-27-Fantasy/</loc>
+    
+    <lastmod>2018-08-03T14:11:55.020Z</lastmod>
     
   </url>
   
@@ -61,13 +68,6 @@
     <loc>http://yoursite.com/2018-07-29-PythonRegex/</loc>
     
     <lastmod>2018-07-29T13:55:11.619Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018-07-27-Fantasy/</loc>
-    
-    <lastmod>2018-07-29T13:00:53.976Z</lastmod>
     
   </url>
   
