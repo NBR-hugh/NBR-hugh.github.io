@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[自怼圈迎新]]></title>
+    <url>%2F2018-08-04-WelcomeNewDuer%2F</url>
+    <content type="text"><![CDATA[天南海北,有朋远来,不亦说乎?! 123456789101112131415161718192021222324252627自怼圈招新 ---- NBR-hugh自问共答,自作共享,自愉共乐.人怼怼己,入怼怼出,显怼怼隐.圈困圈破,圈忙圈闲,圈行圈止.山川虽远,道行虽阻,意气相投,天南海北,有朋远来,不亦说乎?!Welcome new DUer ---- NBR-hughAnyone ask, make and be happy by self,We answer, share and enjoy together!People debug each other,from inside to outside,from evidence into hiding.Fall into a dilemma? Broke it!Anytime you are busy or free,keep the rhythm going without any noise!No matter how far away,no matter how hard,sincere aspirations are always calling: Keep trying! TL 180804 3T NBR-hugh init]]></content>
+      <categories>
+        <category>Write</category>
+      </categories>
+      <tags>
+        <tag>poem</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Slack 操作序列]]></title>
     <url>%2F2018-08-04-Slack%2F</url>
     <content type="text"><![CDATA[模式化日常消息的处理操作 碎碎念 所有工具到最后就是一串常用操作的肌肉记忆,熟悉的办法笨又简单 每个操作做他个50遍,再加上日常的频繁使用,基本就熟悉了. 处理所有消息的三个关键点 异步沟通 批量处理 快速反应 所有的损耗来自状态的频繁切换,犹豫等待,焦虑瘫痪,茫然无措. 常用快捷键 快捷键面板 cmd + / 设置 cmd + , 快速跳转 cmd + k all Unreads cmd + shift + a all Thread cmd + shift + t Channel info pane cmd + shift + I 频道选择 alt + ↑↓ 显示当前频道 about cmd + . 消息滚动 fn + ↑↓ 快速跳转当前频道未读消息 cmd + j 日常模式 cmd + tab 切换到 slack 应用 cmd + shift + a 固定时间点查看所有未读消息,快速反应: 回复,略过(read),搁置(star) cmd + k or alt + ↑↓ 跳转特定频道与联系人 感兴趣/需要进一步思考的发言 star 起来, cmd + shift + s 集中查看 新加入一个频道cmd + shift + I 查看频道相关信息 HighLight 参与度最高的信息 Pinned Items 置顶公告的信息 提取线索 HighLight Channel info pane 的 HighLight 可以查看当前频道内最活跃的信息, 收录大家分享的外链 收录 reaction 多的信息 Read channel highlights – Slack Help Center 所以看到优质的/有感想的消息,积极表达态度,表达 reaction! Star 感兴趣/需要进一步思考的发言 star 起来, cmd + shift + s 集中查看 更多 Slack Help Center TL 180804 1T NBR-hugh init]]></content>

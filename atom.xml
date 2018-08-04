@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-08-04T03:05:59.240Z</updated>
+  <updated>2018-08-04T14:05:19.978Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>自怼圈迎新</title>
+    <link href="http://yoursite.com/2018-08-04-WelcomeNewDuer/"/>
+    <id>http://yoursite.com/2018-08-04-WelcomeNewDuer/</id>
+    <published>2018-08-04T14:03:35.000Z</published>
+    <updated>2018-08-04T14:05:19.978Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt; 天南海北,有朋远来,不亦说乎?! &lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Write" scheme="http://yoursite.com/categories/Write/"/>
+    
+    
+      <category term="poem" scheme="http://yoursite.com/tags/poem/"/>
+    
+  </entry>
   
   <entry>
     <title>Slack 操作序列</title>
@@ -405,26 +425,6 @@
     
     
       <category term="lesson" scheme="http://yoursite.com/tags/lesson/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>愤</title>
-    <link href="http://yoursite.com/2018-04-04-WHUT/"/>
-    <id>http://yoursite.com/2018-04-04-WHUT/</id>
-    <published>2018-04-04T06:18:28.000Z</published>
-    <updated>2018-06-11T00:32:05.212Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt;  夜闻噩耗,心绪难平,遂有此诗 &lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="Write" scheme="http://yoursite.com/categories/Write/"/>
-    
-    
-      <category term="poem" scheme="http://yoursite.com/tags/poem/"/>
     
   </entry>
   
