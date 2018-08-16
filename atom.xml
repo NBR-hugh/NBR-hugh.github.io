@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-08-16T10:24:33.981Z</updated>
+  <updated>2018-08-16T10:25:56.483Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2018-08-16-SelfFullfill/"/>
     <id>http://yoursite.com/2018-08-16-SelfFullfill/</id>
     <published>2018-08-16T09:57:46.000Z</published>
-    <updated>2018-08-16T10:24:33.981Z</updated>
+    <updated>2018-08-16T10:25:56.483Z</updated>
     
     <summary type="html">
     
@@ -32,7 +32,9 @@
       <category term="Write" scheme="http://yoursite.com/categories/Write/"/>
     
     
-      <category term="古诗源，随想" scheme="http://yoursite.com/tags/%E5%8F%A4%E8%AF%97%E6%BA%90%EF%BC%8C%E9%9A%8F%E6%83%B3/"/>
+      <category term="古诗源" scheme="http://yoursite.com/tags/%E5%8F%A4%E8%AF%97%E6%BA%90/"/>
+    
+      <category term="随想" scheme="http://yoursite.com/tags/%E9%9A%8F%E6%83%B3/"/>
     
   </entry>
   
