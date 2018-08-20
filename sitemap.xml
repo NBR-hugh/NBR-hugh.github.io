@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2018-07-30-Vaccin/</loc>
+    
+    <lastmod>2018-08-20T00:42:47.912Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018-07-04-Change/</loc>
+    
+    <lastmod>2018-08-17T08:21:59.007Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2018-08-16-SelfFullfill/</loc>
     
     <lastmod>2018-08-16T10:34:38.033Z</lastmod>
@@ -23,23 +37,9 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018-07-04-Change/</loc>
-    
-    <lastmod>2018-08-15T02:01:07.813Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/2018-07-27-Fantasy/</loc>
     
     <lastmod>2018-08-13T07:53:51.486Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018-07-30-Vaccin/</loc>
-    
-    <lastmod>2018-08-13T07:50:04.510Z</lastmod>
     
   </url>
   
