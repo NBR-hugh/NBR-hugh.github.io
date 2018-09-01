@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-09-01T10:35:07.607Z</updated>
+  <updated>2018-09-01T15:59:24.064Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://yoursite.com/2018-09-01-NormalNew/"/>
+    <id>http://yoursite.com/2018-09-01-NormalNew/</id>
+    <published>2018-09-01T15:19:37.000Z</published>
+    <updated>2018-09-01T15:59:24.064Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt; 三千枯木盘根老, 一绿新芽自心生. &lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Write" scheme="http://yoursite.com/categories/Write/"/>
+    
+    
+      <category term="poem" scheme="http://yoursite.com/tags/poem/"/>
+    
+  </entry>
   
   <entry>
     <title>一生</title>
@@ -400,26 +420,6 @@
     <summary type="html">
     
       &lt;blockquote class=&quot;blockquote-center&quot;&gt; 始问不清答亦渺, 自寻彷徨疑无路. &lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="Write" scheme="http://yoursite.com/categories/Write/"/>
-    
-    
-      <category term="poem" scheme="http://yoursite.com/tags/poem/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>社会形象</title>
-    <link href="http://yoursite.com/2018-06-11-SocialImage/"/>
-    <id>http://yoursite.com/2018-06-11-SocialImage/</id>
-    <published>2018-06-11T00:04:56.000Z</published>
-    <updated>2018-06-11T00:14:54.941Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt;  恬然平常阶边石,自患女娲补天余.   &lt;/blockquote&gt;
     
     </summary>
     
