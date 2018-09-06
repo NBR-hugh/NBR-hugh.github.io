@@ -32,29 +32,9 @@
       <category term="Write" scheme="http://yoursite.com/categories/Write/"/>
     
     
-      <category term="随想" scheme="http://yoursite.com/tags/%E9%9A%8F%E6%83%B3/"/>
-    
       <category term="生" scheme="http://yoursite.com/tags/%E7%94%9F/"/>
     
-  </entry>
-  
-  <entry>
-    <title>写不出来的文章</title>
-    <link href="http://yoursite.com/2018-09-02-NoArticle/"/>
-    <id>http://yoursite.com/2018-09-02-NoArticle/</id>
-    <published>2018-09-03T17:41:58.000Z</published>
-    <updated>2018-09-05T17:51:47.168Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt; 半天写不出文章, 所以我写了这篇文章.   &lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="Write" scheme="http://yoursite.com/categories/Write/"/>
-    
-    
-      <category term="乱七八糟" scheme="http://yoursite.com/tags/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/"/>
+      <category term="随想" scheme="http://yoursite.com/tags/%E9%9A%8F%E6%83%B3/"/>
     
   </entry>
   
@@ -114,9 +94,9 @@
       <category term="Write" scheme="http://yoursite.com/categories/Write/"/>
     
     
-      <category term="古诗源" scheme="http://yoursite.com/tags/%E5%8F%A4%E8%AF%97%E6%BA%90/"/>
-    
       <category term="随想" scheme="http://yoursite.com/tags/%E9%9A%8F%E6%83%B3/"/>
+    
+      <category term="古诗源" scheme="http://yoursite.com/tags/%E5%8F%A4%E8%AF%97%E6%BA%90/"/>
     
   </entry>
   
@@ -422,6 +402,26 @@
     
       &lt;blockquote class=&quot;blockquote-center&quot;&gt; 等人滞事皆困腐,何妨长啸先徐行 .
  &lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Write" scheme="http://yoursite.com/categories/Write/"/>
+    
+    
+      <category term="poem" scheme="http://yoursite.com/tags/poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>信息过载</title>
+    <link href="http://yoursite.com/2018-06-18-OverInfo/"/>
+    <id>http://yoursite.com/2018-06-18-OverInfo/</id>
+    <published>2018-06-18T09:00:24.000Z</published>
+    <updated>2018-06-18T09:08:17.633Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt; 枉遍他者万般解,无益吾心一点明. &lt;/blockquote&gt;
     
     </summary>
     
