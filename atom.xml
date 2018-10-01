@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-09-05T17:49:13.749Z</updated>
+  <updated>2018-10-01T04:59:16.309Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>纪念马奇</title>
+    <link href="http://yoursite.com/2018-10-01-March/"/>
+    <id>http://yoursite.com/2018-10-01-March/</id>
+    <published>2018-10-01T02:41:43.000Z</published>
+    <updated>2018-10-01T04:59:16.309Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt; 恒星归寂黑暗，愿天堂得以明亮。 &lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Write" scheme="http://yoursite.com/categories/Write/"/>
+    
+    
+      <category term="mourn" scheme="http://yoursite.com/tags/mourn/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2018.09.05</title>
     <link href="http://yoursite.com/2018-09-06-Birthday25/"/>
     <id>http://yoursite.com/2018-09-06-Birthday25/</id>
     <published>2018-09-05T16:27:19.000Z</published>
-    <updated>2018-09-05T17:49:13.749Z</updated>
+    <updated>2018-09-19T03:19:21.692Z</updated>
     
     <summary type="html">
     
@@ -402,26 +422,6 @@
     
       &lt;blockquote class=&quot;blockquote-center&quot;&gt; 等人滞事皆困腐,何妨长啸先徐行 .
  &lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="Write" scheme="http://yoursite.com/categories/Write/"/>
-    
-    
-      <category term="poem" scheme="http://yoursite.com/tags/poem/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>信息过载</title>
-    <link href="http://yoursite.com/2018-06-18-OverInfo/"/>
-    <id>http://yoursite.com/2018-06-18-OverInfo/</id>
-    <published>2018-06-18T09:00:24.000Z</published>
-    <updated>2018-06-18T09:08:17.633Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt; 枉遍他者万般解,无益吾心一点明. &lt;/blockquote&gt;
     
     </summary>
     
