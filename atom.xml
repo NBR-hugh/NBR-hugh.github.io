@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-03-07T09:36:00.141Z</updated>
+  <updated>2019-03-07T09:44:33.523Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,11 +21,31 @@
     <link href="http://yoursite.com/2019-03-07-MournZhuShiJian%20/"/>
     <id>http://yoursite.com/2019-03-07-MournZhuShiJian /</id>
     <published>2019-03-07T09:30:34.000Z</published>
-    <updated>2019-03-07T09:36:00.141Z</updated>
+    <updated>2019-03-07T09:44:33.523Z</updated>
     
     <summary type="html">
     
       &lt;blockquote class=&quot;blockquote-center&quot;&gt; 功不唐捐败何忧，古稀犹栽十年树。      &lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Write" scheme="http://yoursite.com/categories/Write/"/>
+    
+    
+      <category term="poem" scheme="http://yoursite.com/tags/poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>生离</title>
+    <link href="http://yoursite.com/2019-02-28-PartForever/"/>
+    <id>http://yoursite.com/2019-02-28-PartForever/</id>
+    <published>2019-02-28T14:12:12.000Z</published>
+    <updated>2019-03-07T09:49:52.553Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt; 生者释心，往者安息. &lt;/blockquote&gt;
     
     </summary>
     
@@ -401,26 +421,6 @@
     <summary type="html">
     
       &lt;blockquote class=&quot;blockquote-center&quot;&gt; 知交浮萍人世间,命引机缘一线牵.  &lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="Write" scheme="http://yoursite.com/categories/Write/"/>
-    
-    
-      <category term="poem" scheme="http://yoursite.com/tags/poem/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>完美主义</title>
-    <link href="http://yoursite.com/2018-06-24-perfectionism/"/>
-    <id>http://yoursite.com/2018-06-24-perfectionism/</id>
-    <published>2018-06-24T09:29:56.000Z</published>
-    <updated>2018-06-24T09:32:28.334Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt; 忧镜月一场大梦,盼进展几度秋凉. &lt;/blockquote&gt;
     
     </summary>
     
