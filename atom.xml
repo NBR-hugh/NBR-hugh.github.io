@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-03-01T03:37:25.697Z</updated>
+  <updated>2019-03-07T09:33:16.918Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>悼褚老</title>
+    <link href="http://yoursite.com/2019-03-07-MournZhuShiJian%20/"/>
+    <id>http://yoursite.com/2019-03-07-MournZhuShiJian /</id>
+    <published>2019-03-07T09:30:34.000Z</published>
+    <updated>2019-03-07T09:33:16.918Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt; 功不唐捐败何忧，古稀犹栽十年树。      &lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Write" scheme="http://yoursite.com/categories/Write/"/>
+    
+    
+      <category term="poem" scheme="http://yoursite.com/tags/poem/"/>
+    
+  </entry>
+  
+  <entry>
     <title>蚊吻</title>
     <link href="http://yoursite.com/2019-03-01-MosquitoKiss/"/>
     <id>http://yoursite.com/2019-03-01-MosquitoKiss/</id>
     <published>2019-02-28T14:12:12.000Z</published>
-    <updated>2019-03-01T03:37:25.697Z</updated>
+    <updated>2019-03-01T03:43:12.513Z</updated>
     
     <summary type="html">
     
@@ -401,26 +421,6 @@
     <summary type="html">
     
       &lt;blockquote class=&quot;blockquote-center&quot;&gt; 忧镜月一场大梦,盼进展几度秋凉. &lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="Write" scheme="http://yoursite.com/categories/Write/"/>
-    
-    
-      <category term="poem" scheme="http://yoursite.com/tags/poem/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>转行</title>
-    <link href="http://yoursite.com/2018-06-18-RedirectCareer/"/>
-    <id>http://yoursite.com/2018-06-18-RedirectCareer/</id>
-    <published>2018-06-18T09:11:37.000Z</published>
-    <updated>2018-06-18T09:16:07.997Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt; 弃困独桥觅旷野,始问机缘随贵人. &lt;/blockquote&gt;
     
     </summary>
     
